@@ -1,8 +1,7 @@
 <script>
-      import { Content } from '@builder.io/sdk-svelte';
+      import { Content, isPreviewing } from '@builder.io/sdk-svelte';
     // Add your Public API Key
   const BUILDER_PUBLIC_API_KEY = '0c7e64220f9d4dbaa783aead6a51be4b';
-  export let content;
   export let data;
 
 </script>
@@ -12,7 +11,7 @@
 <!-- Render builder content with all required props -->
 <Content
   model="page"
-  {content}
+  content={data.content}
   apiKey={BUILDER_PUBLIC_API_KEY}
 />
 {:else}

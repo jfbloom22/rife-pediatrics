@@ -1,4 +1,3 @@
-
 // src/routes/+page.server.js
 import { fetchOneEntry } from '@builder.io/sdk-svelte';
 
@@ -17,11 +16,9 @@ export async function load({ page }) {
       urlPath,
     },
   });
-
+  console.log('content', content, urlPath)
   // return content from `fetchOneEntry()`
   return {
-    props: {
       content,
-    },
   };
 }
