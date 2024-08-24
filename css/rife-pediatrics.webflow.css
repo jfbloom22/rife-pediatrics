@@ -116,19 +116,19 @@ blockquote {
 }
 
 .utility-page-wrap {
-  width: 100vw;
-  height: 100vh;
-  max-height: 100%;
-  max-width: 100%;
   justify-content: center;
   align-items: center;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  max-height: 100%;
   display: flex;
 }
 
 .utility-page-content {
-  width: 260px;
   text-align: center;
   flex-direction: column;
+  width: 260px;
   display: flex;
 }
 
@@ -139,10 +139,10 @@ blockquote {
 }
 
 .styles-section {
-  height: 100vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
   padding-top: 100px;
   padding-left: 100px;
   padding-right: 100px;
@@ -150,9 +150,6 @@ blockquote {
 }
 
 .header-section {
-  height: 81vh;
-  max-height: 800px;
-  min-height: 655px;
   background-image: url('../images/board-bright-design-235994.webp');
   background-position: 50%;
   background-repeat: no-repeat;
@@ -161,6 +158,9 @@ blockquote {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  height: 81vh;
+  min-height: 655px;
+  max-height: 800px;
   margin-bottom: 0;
   padding-bottom: 248px;
   display: flex;
@@ -168,17 +168,17 @@ blockquote {
 }
 
 .header-section.about-header {
-  height: 100vh;
-  max-height: 549px;
-  min-height: 0;
   justify-content: space-between;
+  height: 100vh;
+  min-height: 0;
+  max-height: 549px;
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
 .header-section.about {
-  max-height: 533px;
   min-height: 0;
+  max-height: 533px;
   display: block;
 }
 
@@ -192,10 +192,10 @@ blockquote {
 }
 
 .navbar {
+  background-color: #0000;
+  justify-content: center;
   width: 100%;
   min-height: 105px;
-  background-color: rgba(0, 0, 0, 0);
-  justify-content: center;
   display: block;
   position: static;
   top: 0;
@@ -204,27 +204,26 @@ blockquote {
 }
 
 .navbar-container {
-  width: 100%;
-  height: 103px;
-  max-width: 1280px;
   flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
+  width: 100%;
+  max-width: 1280px;
+  height: 103px;
   display: flex;
   position: static;
 }
 
 .nav-menu {
-  width: 485px;
-  height: 100px;
-  border-bottom: 1px solid rgba(255, 255, 255, .1);
+  border-bottom: 1px solid #ffffff1a;
   flex: 1;
   justify-content: space-around;
+  width: 485px;
+  height: 100px;
   display: flex;
 }
 
 .nav-link {
-  height: 100%;
   color: #000;
   letter-spacing: .75px;
   text-transform: uppercase;
@@ -232,6 +231,7 @@ blockquote {
   order: 0;
   justify-content: center;
   align-items: center;
+  height: 100%;
   margin-left: 0;
   margin-right: 0;
   padding-left: 10px;
@@ -252,7 +252,6 @@ blockquote {
 }
 
 .free-pass-section {
-  max-height: 600px;
   background-image: url('../images/board-bright-design-235994.webp');
   background-position: 50%;
   background-repeat: no-repeat;
@@ -261,6 +260,7 @@ blockquote {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  max-height: 600px;
   margin-top: 62px;
   padding-top: 84px;
   padding-bottom: 60px;
@@ -276,18 +276,15 @@ blockquote {
   margin-bottom: 150px;
   display: flex;
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  inset: 0;
 }
 
 .v-line {
   z-index: 10;
-  min-width: 1px;
-  background-color: rgba(255, 255, 255, .15);
+  background-color: #ffffff26;
   justify-content: center;
   align-items: center;
+  min-width: 1px;
   display: flex;
   position: static;
 }
@@ -301,13 +298,13 @@ blockquote {
 
 .header-container {
   z-index: 2;
-  width: 100%;
-  height: 70%;
-  max-width: 1280px;
   flex-direction: row;
   justify-content: center;
   align-self: center;
   align-items: center;
+  width: 100%;
+  max-width: 1280px;
+  height: 70%;
   margin: 114px auto 4px;
   padding-bottom: 6px;
   display: block;
@@ -315,17 +312,17 @@ blockquote {
 }
 
 .btn {
-  width: 227px;
-  height: 50px;
-  min-width: 180px;
   border: 2px solid var(--indigo);
   color: var(--black);
   letter-spacing: .75px;
   text-transform: uppercase;
-  background-color: rgba(2, 149, 166, .66);
+  background-color: #0295a6a8;
   border-radius: 2px;
   justify-content: center;
   align-items: center;
+  width: 227px;
+  min-width: 180px;
+  height: 50px;
   margin-top: 64px;
   margin-left: auto;
   margin-right: auto;
@@ -345,7 +342,7 @@ blockquote {
 
 .btn.outline {
   color: #6b5353;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #0000;
   background-image: none;
   border: 1px solid #705c5c;
   font-family: Montserrat, sans-serif;
@@ -362,18 +359,15 @@ blockquote {
 }
 
 .header-title-container {
-  width: 100%;
   clear: both;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   margin: 4% auto 12px;
   display: block;
   position: static;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  inset: 0;
 }
 
 .header-social-links {
@@ -384,13 +378,13 @@ blockquote {
 }
 
 .social-link {
-  width: 50px;
-  height: 50px;
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px solid rgba(255, 255, 255, .15);
+  background-color: #0000;
+  border: 1px solid #ffffff26;
   border-radius: 100px;
   justify-content: center;
   align-items: center;
+  width: 50px;
+  height: 50px;
   margin-top: 6.25px;
   margin-bottom: 6.25px;
   font-family: "Fa brands 400", sans-serif;
@@ -404,10 +398,10 @@ blockquote {
 
 .header-bottom-navbar {
   z-index: 1;
+  justify-content: space-between;
   width: 100%;
   max-width: 1280px;
   min-height: 50px;
-  justify-content: space-between;
   display: block;
   position: relative;
 }
@@ -419,13 +413,13 @@ blockquote {
 }
 
 .contact-link {
-  width: 50px;
-  height: 50px;
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px solid rgba(255, 255, 255, .15);
+  background-color: #0000;
+  border: 1px solid #ffffff26;
   border-radius: 100px;
   justify-content: center;
   align-items: center;
+  width: 50px;
+  height: 50px;
   margin-top: 6.25px;
   margin-bottom: 6.25px;
   font-family: "Fa solid 900", sans-serif;
@@ -443,13 +437,13 @@ blockquote {
 }
 
 .registration-box {
-  width: 100%;
-  max-width: 1280px;
-  background-color: rgba(44, 149, 187, .81);
+  background-color: #2c95bbcf;
   border-radius: 5px;
   flex-flow: column;
   justify-content: flex-start;
   align-items: stretch;
+  width: 100%;
+  max-width: 1280px;
   padding-bottom: 35px;
   padding-left: 50px;
   padding-right: 50px;
@@ -484,10 +478,10 @@ blockquote {
 }
 
 .overline.light._100 {
-  height: 100px;
   text-align: center;
   justify-content: center;
   align-items: center;
+  height: 100px;
   padding-bottom: 0;
   font-family: "Fa 400", sans-serif;
   font-size: 15px;
@@ -502,42 +496,37 @@ blockquote {
 
 .free-pass-form {
   flex-flow: column;
-  align-content: flex-start;
-  justify-content: space-between;
+  place-content: flex-start space-between;
   align-items: center;
   display: flex;
 }
 
 .free-pass-form-text-field {
-  width: 49.5%;
-  height: 50px;
   color: #fff;
-  background-color: rgba(255, 255, 255, .25);
+  background-color: #ffffff40;
   border-style: none;
   border-radius: 5px;
+  width: 49.5%;
+  height: 50px;
 }
 
 .free-pass-form-text-field:focus {
-  background-color: rgba(255, 255, 255, .5);
-}
-
-.free-pass-form-text-field::-ms-input-placeholder {
-  color: rgba(255, 255, 255, .5);
+  background-color: #ffffff80;
 }
 
 .free-pass-form-text-field::placeholder {
-  color: rgba(255, 255, 255, .5);
+  color: #ffffff80;
 }
 
 .form-btn {
-  width: 49.5%;
-  height: 50px;
   color: var(--white);
   letter-spacing: .75px;
   text-transform: uppercase;
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px solid rgba(0, 0, 0, .18);
+  background-color: #0000;
+  border: 1px solid #0000002e;
   border-radius: 5px;
+  width: 49.5%;
+  height: 50px;
   margin-left: auto;
   margin-right: auto;
   font-family: Poppins, sans-serif;
@@ -546,12 +535,12 @@ blockquote {
 }
 
 .form-btn:hover {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #0000;
 }
 
 .form-btn.contact {
-  width: 100%;
   color: var(--indigo);
+  width: 100%;
 }
 
 .intro-section {
@@ -569,7 +558,7 @@ blockquote {
 }
 
 .intro-section.telemedicine {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #0000;
   padding-top: 41px;
 }
 
@@ -579,28 +568,28 @@ blockquote {
 }
 
 .collection-list-wrapper {
-  width: 100%;
-  border-top: 1px solid rgba(255, 255, 255, .1);
+  border-top: 1px solid #ffffff1a;
   flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
+  width: 100%;
   display: none;
 }
 
 .collection-item {
-  height: 50px;
   text-transform: uppercase;
   justify-content: center;
   align-items: center;
+  height: 50px;
   padding-left: 0;
   padding-right: 0;
   display: flex;
 }
 
 .collection-list {
-  width: 100%;
   flex-flow: row;
   justify-content: space-between;
+  width: 100%;
   display: none;
 }
 
@@ -613,12 +602,12 @@ blockquote {
 }
 
 .link-block {
-  width: 100%;
-  height: 100%;
   color: var(--black);
   letter-spacing: .75px;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
   padding-left: .75px;
   font-family: Poppins, sans-serif;
   font-size: 12px;
@@ -634,27 +623,27 @@ blockquote {
 }
 
 .free-pass-form-row {
-  width: 100%;
   justify-content: space-between;
+  width: 100%;
   display: flex;
 }
 
 .about-container {
-  width: 100%;
-  max-width: 1280px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  max-width: 1280px;
   margin-bottom: 82px;
   padding-top: 2px;
   display: flex;
 }
 
 .section-image-container {
-  min-width: 30%;
   flex: 0 auto;
   justify-content: center;
   align-items: center;
+  min-width: 30%;
   margin-left: 25px;
   margin-right: 25px;
   padding: 20px;
@@ -663,11 +652,11 @@ blockquote {
 }
 
 .image-corner-bottom {
-  width: 25%;
-  height: 25%;
   background-color: var(--deep-sky-blue);
   box-shadow: none;
   border-radius: 3px;
+  width: 25%;
+  height: 25%;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -675,11 +664,11 @@ blockquote {
 
 .image-corner-top {
   z-index: 0;
-  width: 50%;
-  height: 50%;
   background-color: var(--deep-sky-blue);
   box-shadow: none;
   border-radius: 3px;
+  width: 50%;
+  height: 50%;
   position: absolute;
   top: 0;
   left: 0;
@@ -687,10 +676,10 @@ blockquote {
 
 .section-image {
   z-index: 1;
-  width: 100%;
-  max-width: 600px;
   border-radius: 5px;
   order: 0;
+  width: 100%;
+  max-width: 600px;
   position: static;
   box-shadow: 0 25px 50px -25px #000;
 }
@@ -712,15 +701,15 @@ blockquote {
 }
 
 .about-text-container {
-  width: 100%;
-  max-width: 600px;
-  min-width: 300px;
   background-color: #fff;
   border-radius: 5px;
   flex-direction: column;
   order: 1;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  min-width: 300px;
+  max-width: 600px;
   margin-left: 70px;
   margin-right: 70px;
   padding: 50px 25px 25px;
@@ -729,8 +718,8 @@ blockquote {
 }
 
 .about-text-container.telemedicine {
-  max-width: 436px;
   order: -1;
+  max-width: 436px;
 }
 
 .header-title {
@@ -754,20 +743,20 @@ blockquote {
 }
 
 .classes-container {
-  width: 100%;
-  max-width: 1280px;
   flex-flow: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  max-width: 1280px;
   display: flex;
   position: relative;
 }
 
 .classes-content-container {
-  width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   display: flex;
 }
 
@@ -779,10 +768,7 @@ blockquote {
   margin-bottom: 50px;
   display: flex;
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  inset: 0;
 }
 
 .text-span-4 {
@@ -794,8 +780,6 @@ blockquote {
 }
 
 .collection-item-2 {
-  width: auto;
-  height: auto;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   background-color: #fff;
@@ -803,6 +787,8 @@ blockquote {
   grid-template-rows: auto auto;
   grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
+  width: auto;
+  height: auto;
   margin-bottom: 10px;
   padding-top: 25px;
   padding-left: 25px;
@@ -822,10 +808,10 @@ blockquote {
 
 .image-corner-top-classes {
   z-index: 0;
-  width: 50%;
-  height: 50%;
   background-color: var(--deep-sky-blue);
   border-radius: 5px;
+  width: 50%;
+  height: 50%;
   position: absolute;
   top: 0;
   right: 0;
@@ -833,10 +819,10 @@ blockquote {
 }
 
 .image-corner-bottom-classes {
-  width: 25%;
-  height: 25%;
   background-color: var(--indian-red);
   border-radius: 5px;
+  width: 25%;
+  height: 25%;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -845,7 +831,7 @@ blockquote {
 
 .success-message {
   color: #fff;
-  background-color: rgba(255, 255, 255, .25);
+  background-color: #ffffff40;
   border-radius: 5px;
   padding: 0;
   line-height: 25px;
@@ -881,13 +867,13 @@ blockquote {
 }
 
 .day-container {
-  width: 100%;
   text-align: center;
   background-color: #fff;
   border-radius: 5px;
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
+  width: 100%;
   display: flex;
   box-shadow: 0 15px 50px -15px #000;
 }
@@ -906,7 +892,7 @@ blockquote {
 
 .schedule-class {
   letter-spacing: .75px;
-  background-color: rgba(0, 0, 0, .05);
+  background-color: #0000000d;
   border-radius: 5px;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -936,9 +922,9 @@ blockquote {
 
 .schedule-container {
   z-index: 2;
+  justify-content: center;
   width: 100%;
   max-width: 1280px;
-  justify-content: center;
   display: flex;
   position: relative;
   box-shadow: 0 25px 50px -25px #000;
@@ -952,9 +938,9 @@ blockquote {
 }
 
 .collection-item-4 {
-  width: 85.4%;
   background-color: #fff;
   border-radius: 5px;
+  width: 85.4%;
   padding: 50px 25px;
   box-shadow: 0 15px 50px -15px #000;
 }
@@ -977,12 +963,12 @@ blockquote {
 }
 
 .price {
-  width: 100%;
   background-color: var(--deep-sky-blue);
   color: #fff;
   text-transform: none;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  width: 100%;
   margin-bottom: 50px;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -999,11 +985,11 @@ blockquote {
 }
 
 .pricing-container {
-  width: 100%;
-  max-width: 1280px;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -1025,7 +1011,6 @@ blockquote {
 }
 
 .pricing-table {
-  width: 100%;
   float: none;
   clear: none;
   background-color: #fff;
@@ -1033,16 +1018,17 @@ blockquote {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  width: 100%;
   margin: 0 auto;
   padding-bottom: 0;
   display: block;
 }
 
 .pricing-table-content {
-  width: 61%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 61%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 25px;
@@ -1068,11 +1054,11 @@ blockquote {
 }
 
 .contact-form-container {
-  width: 50%;
   background-image: linear-gradient(to bottom, var(--white), var(--white));
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  width: 50%;
   padding-top: 100px;
   padding-left: 50px;
   padding-right: 50px;
@@ -1082,16 +1068,15 @@ blockquote {
 
 .contact-form-block {
   z-index: 100;
-  width: 100%;
   background-color: #fff;
   border-radius: 5px;
   flex-flow: column wrap;
   grid-template-rows: auto auto;
   grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
-  align-content: stretch;
-  justify-content: center;
+  place-content: stretch center;
   align-items: center;
+  width: 100%;
   margin-bottom: 0;
   padding: 50px;
   display: flex;
@@ -1100,42 +1085,37 @@ blockquote {
 }
 
 .contact-form {
-  width: 100%;
   flex-flow: wrap;
-  align-content: flex-start;
-  justify-content: space-between;
+  place-content: flex-start space-between;
   align-items: center;
+  width: 100%;
   display: flex;
 }
 
 .textarea {
-  min-height: 100px;
   color: #151515;
   background-color: #f5f5f5;
   border-style: none;
   border-radius: 5px;
+  min-height: 100px;
 }
 
 .textarea:focus {
   background-color: #d5d5d5;
 }
 
-.textarea::-ms-input-placeholder {
-  color: rgba(21, 21, 21, .25);
-}
-
 .textarea::placeholder {
-  color: rgba(21, 21, 21, .25);
+  color: #15151540;
 }
 
 .contact-form-text-field {
-  width: 49.25%;
-  height: 50px;
   background-color: #f5f5f5;
   border-style: none;
   border-radius: 5px;
   flex: 0 auto;
   align-self: auto;
+  width: 49.25%;
+  height: 50px;
   display: block;
   overflow: visible;
 }
@@ -1144,12 +1124,8 @@ blockquote {
   background-color: #d5d5d5;
 }
 
-.contact-form-text-field::-ms-input-placeholder {
-  color: rgba(21, 21, 21, .25);
-}
-
 .contact-form-text-field::placeholder {
-  color: rgba(21, 21, 21, .25);
+  color: #15151540;
 }
 
 .contact-form-text-field.email-input {
@@ -1162,11 +1138,11 @@ blockquote {
 
 .contact-info-container {
   z-index: 100;
-  width: 100%;
-  min-height: 100px;
   float: none;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
+  min-height: 100px;
   padding-top: 25px;
   padding-bottom: 25px;
   display: flex;
@@ -1192,14 +1168,14 @@ blockquote {
 
 .section-icon {
   z-index: 100;
-  width: 135px;
-  height: 135px;
   color: var(--indigo);
   background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, .01);
+  border: 1px solid #00000003;
   border-radius: 100px;
   justify-content: center;
   align-items: center;
+  width: 135px;
+  height: 135px;
   margin-top: -67.5px;
   margin-bottom: 32.5px;
   font-family: "Fa solid 900", sans-serif;
@@ -1210,27 +1186,27 @@ blockquote {
 }
 
 .contact-container {
-  width: 100%;
   justify-content: center;
+  width: 100%;
   margin-top: -60px;
   display: flex;
 }
 
 .footer-section {
-  height: 100px;
   background-color: var(--dark-slate-grey);
   color: #151515;
-  border-top: 1px solid rgba(255, 255, 255, .15);
+  border-top: 1px solid #ffffff26;
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  height: 100px;
   padding-left: 25px;
   padding-right: 25px;
   display: flex;
 }
 
 .copyright-text {
-  color: rgba(255, 255, 255, .5);
+  color: #ffffff80;
 }
 
 .text-span-9 {
@@ -1240,12 +1216,12 @@ blockquote {
 
 .desktop-fixed-navbar {
   z-index: 10000;
+  box-shadow: none;
+  background-color: #ffffff78;
+  border-bottom: 1px solid #0000001a;
+  justify-content: center;
   width: 100%;
   height: 100px;
-  box-shadow: none;
-  background-color: rgba(255, 255, 255, .47);
-  border-bottom: 1px solid rgba(0, 0, 0, .1);
-  justify-content: center;
   padding-left: 12.5px;
   padding-right: 12.5px;
   display: block;
@@ -1254,10 +1230,10 @@ blockquote {
 }
 
 .desktop-fixed-nav-link {
-  height: auto;
   letter-spacing: .75px;
   text-transform: uppercase;
   align-items: center;
+  height: auto;
   padding-left: 20.75px;
   font-family: Poppins, sans-serif;
   font-size: 12px;
@@ -1275,9 +1251,9 @@ blockquote {
 }
 
 .desktop-fixed-nav-container {
-  width: 100%;
   justify-content: space-between;
   align-items: stretch;
+  width: 100%;
   display: flex;
 }
 
@@ -1294,14 +1270,14 @@ blockquote {
 }
 
 .dark-social-link {
-  width: 50px;
-  height: 50px;
   color: #151515;
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px solid rgba(21, 21, 21, .1);
+  background-color: #0000;
+  border: 1px solid #1515151a;
   border-radius: 100px;
   justify-content: center;
   align-items: center;
+  width: 50px;
+  height: 50px;
   font-family: "Fa brands 400", sans-serif;
   font-size: 16px;
   display: flex;
@@ -1323,43 +1299,43 @@ blockquote {
 }
 
 .desktop-fixed-nav-brand.w--current {
+  flex: 0 auto;
   width: auto;
   min-width: auto;
-  flex: 0 auto;
   margin-right: 95px;
 }
 
 .mobile-fixed-navbar {
   z-index: 5000;
-  width: 100%;
   background-color: #fff;
   border-bottom: 1px solid #f5f5f5;
   flex-direction: column;
   align-items: stretch;
+  width: 100%;
   display: flex;
   position: fixed;
   box-shadow: 0 0 25px #000;
 }
 
 .mobile-fixed-nav-container {
-  width: 100%;
-  height: 75px;
   border-bottom: 1px solid #f5f5f5;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  height: 75px;
   padding-left: 25px;
   padding-right: 25px;
   display: flex;
 }
 
 .mobile-fixed-nav-menu-button {
-  width: 50px;
-  height: 50px;
   color: #151515;
   border: 1px solid #f5f5f5;
   border-radius: 100px;
   justify-content: center;
   align-items: center;
+  width: 50px;
+  height: 50px;
   font-family: "Fa solid 900", sans-serif;
   text-decoration: none;
   display: flex;
@@ -1379,12 +1355,12 @@ blockquote {
 }
 
 .mobile-fixed-nav-link {
-  height: 100%;
   color: #151515;
   letter-spacing: .75px;
   text-transform: uppercase;
   justify-content: center;
   align-items: center;
+  height: 100%;
   padding-top: 12.5px;
   padding-bottom: 12.5px;
   font-family: Poppins, sans-serif;
@@ -1399,10 +1375,10 @@ blockquote {
 }
 
 .mobile-fixed-menu-social-links {
-  height: 100%;
   border-top: 1px solid #f5f5f5;
   justify-content: center;
   align-items: center;
+  height: 100%;
   padding-top: 12.5px;
   padding-bottom: 12.5px;
   display: flex;
@@ -1435,12 +1411,12 @@ blockquote {
 }
 
 .image-2 {
-  width: 49%;
-  max-width: 100%;
-  min-height: 100%;
   clear: both;
   flex: none;
   order: -1;
+  width: 49%;
+  max-width: 100%;
+  min-height: 100%;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -1545,12 +1521,12 @@ blockquote {
 }
 
 .steps-content {
-  width: 73%;
   float: none;
   clear: both;
   color: var(--black);
   text-align: left;
   letter-spacing: 3px;
+  width: 73%;
   margin-top: 3%;
   margin-left: auto;
   margin-right: auto;
@@ -1609,8 +1585,8 @@ blockquote {
 }
 
 .slide {
-  height: 53vh;
   background-color: var(--indigo);
+  height: 53vh;
   margin-bottom: 0;
   padding-bottom: 9px;
 }
@@ -1675,10 +1651,7 @@ blockquote {
   padding-bottom: 77px;
   display: inline-block;
   position: relative;
-  top: 0%;
-  bottom: 0%;
-  left: 0%;
-  right: 0%;
+  inset: 0%;
 }
 
 .heading-8 {
@@ -1704,10 +1677,7 @@ blockquote {
   font-size: .6em;
   font-weight: 600;
   position: relative;
-  top: auto;
-  bottom: 39%;
-  left: 0%;
-  right: 0%;
+  inset: auto 0% 39%;
 }
 
 .heading-9 {
@@ -1846,8 +1816,7 @@ blockquote {
 
   .free-pass-form {
     flex-flow: column;
-    align-content: center;
-    justify-content: space-between;
+    place-content: center space-between;
     align-items: stretch;
     display: flex;
   }
@@ -1866,18 +1835,18 @@ blockquote {
   }
 
   .about-container {
-    width: 100vw;
     flex-flow: row;
     align-items: center;
+    width: 100vw;
   }
 
   .section-image-container {
+    flex: 0 auto;
     width: 49.25%;
-    max-height: 100%;
+    min-width: auto;
     max-width: 100%;
     min-height: auto;
-    min-width: auto;
-    flex: 0 auto;
+    max-height: 100%;
     margin: 50px 0;
   }
 
@@ -1888,9 +1857,9 @@ blockquote {
   }
 
   .about-text-container {
-    width: 44%;
     text-align: center;
     align-items: center;
+    width: 44%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1906,9 +1875,9 @@ blockquote {
   }
 
   .classes-content-container {
-    width: 49.25%;
     text-align: center;
     align-items: center;
+    width: 49.25%;
   }
 
   .v-lines-container {
@@ -1921,8 +1890,8 @@ blockquote {
   }
 
   .day-container {
-    width: 33.333%;
     flex-wrap: nowrap;
+    width: 33.333%;
   }
 
   .schedule-container {
@@ -1962,9 +1931,9 @@ blockquote {
   }
 
   .map {
+    flex-wrap: nowrap;
     width: 100%;
     height: 450px;
-    flex-wrap: nowrap;
   }
 
   .contact-form-container {
@@ -1980,8 +1949,7 @@ blockquote {
 
   .contact-form {
     flex-flow: wrap;
-    align-content: center;
-    justify-content: space-between;
+    place-content: center space-between;
     align-items: stretch;
     display: flex;
   }
@@ -2001,10 +1969,7 @@ blockquote {
   .desktop-fixed-navbar {
     display: block;
     position: fixed;
-    top: 0%;
-    bottom: auto;
-    left: 0%;
-    right: 0%;
+    inset: 0% 0% auto;
     overflow: hidden;
   }
 
@@ -2121,8 +2086,8 @@ blockquote {
   }
 
   .section-image-container {
-    width: 75%;
     flex: 0 auto;
+    width: 75%;
   }
 
   .about-text-container {
@@ -2267,8 +2232,8 @@ blockquote {
   }
 
   .section-image-container {
-    width: 100%;
     flex: 0 auto;
+    width: 100%;
   }
 
   .about-section {
