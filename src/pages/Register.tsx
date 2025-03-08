@@ -25,8 +25,8 @@ export const RegisterPage = () => {
 
       {/* Hero Section */}
       <div id="home" className="relative py-24 md:py-32 bg-primary/10">
-        <div className="container mx-auto px-6 text-center">
-          <h1 className="text-3xl md:text-4xl font-bold uppercase">
+        <div className="container mx-auto px-6">
+          <h1 className="text-3xl md:text-4xl font-bold uppercase text-center">
             Membership & Pricing
           </h1>
         </div>
@@ -37,177 +37,141 @@ export const RegisterPage = () => {
         <div className="container mx-auto px-6">
           <motion.div
             {...fadeIn}
-            className="max-w-3xl mx-auto bg-white rounded-lg shadow-lg p-8"
+            className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8"
           >
-            <h2 className="text-3xl font-bold text-center mb-6 text-primary">
+            <h2 className="text-3xl font-bold mb-8 text-primary">
               Starting at $50/Mo
             </h2>
 
-            <div className="space-y-8">
-              <div>
-                <h4 className="text-xl font-semibold mb-3">New Patient Fees</h4>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>
+            <div className="space-y-10">
+              <div className="text-left">
+                <h4 className="text-xl font-semibold mb-4 border-b border-gray-200 pb-2">
+                  New Patient Fees
+                </h4>
+                <ul className="list-disc pl-6 space-y-3">
+                  <li className="text-base">
                     <strong>$150</strong> cover all children in a household with
                     telemedicine membership sign up
                     <br />
                     <strong>$150</strong> per child without telemedicine sign up
                   </li>
-                  <li>
+                  <li className="text-base">
                     <strong>$150</strong> per adult
                   </li>
                 </ul>
               </div>
 
-              <div>
-                <h4 className="text-xl font-semibold mb-3">Office Visit</h4>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>
+              <div className="text-left">
+                <h4 className="text-xl font-semibold mb-4 border-b border-gray-200 pb-2">
+                  Office Visit
+                </h4>
+                <ul className="list-disc pl-6 space-y-3">
+                  <li className="text-base">
                     <strong>$100</strong> per visit (telemedicine or in person)
                     per patient
                   </li>
                 </ul>
               </div>
 
-              <div>
-                <h4 className="text-xl font-semibold mb-3">
+              <div className="text-left">
+                <h4 className="text-xl font-semibold mb-4 border-b border-gray-200 pb-2">
                   Telemedicine Membership
                 </h4>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>
+                <ul className="list-disc pl-6 space-y-3">
+                  <li className="text-base">
                     <strong>$65</strong> a month covers all children in a
                     household*
-                    <br />
+                  </li>
+                  <li className="text-base">
                     <strong>$50</strong> a month for first adult and{" "}
                     <strong>$45</strong> for each additional adult in the same
                     household
-                    <br />
-                    Unlimited telemedicine visits
-                    <br />
+                  </li>
+                  <li className="text-base">Unlimited telemedicine visits</li>
+                  <li className="text-base">
                     Direct texting/calling access to your doctor
                   </li>
                 </ul>
-                <p className="text-sm text-gray-600 mt-2">
+                <p className="text-sm text-gray-600 mt-3 pl-6">
                   * ages 0-18 (and 19-24 if they are full-time students or
                   living at home)
                 </p>
               </div>
 
-              <div>
-                <h4 className="text-xl font-semibold mb-3">Details</h4>
-                <p className="text-base">
-                  At our office, we are dedicated to providing quality,
-                  personalized care for both pediatric and adult patients. For
-                  more information, please review our{" "}
-                  <a
-                    href="/documents/Adult-and-Pediatric-Patient-Agreement-2024.pdf"
-                    target="_blank"
-                    className="text-primary hover:underline"
-                  >
-                    Patient Agreement
-                  </a>
-                  .
-                </p>
-                <p className="text-base mt-4">
-                  If you have more questions and want to discuss, please send a
-                  message below and we will contact you.
-                </p>
-                <p className="text-base mt-4">
-                  Dr. Rife & Dr. Kohl look forward to caring for you and your
-                  family!
-                </p>
+              <div className="text-left">
+                <h4 className="text-xl font-semibold mb-4 border-b border-gray-200 pb-2">
+                  Details
+                </h4>
+                <div className="pl-6 space-y-4">
+                  <p className="text-base">
+                    At our office, we are dedicated to providing quality,
+                    personalized care for both pediatric and adult patients. For
+                    more information, please review our{" "}
+                    <a
+                      href="/documents/Adult-and-Pediatric-Patient-Agreement-2024.pdf"
+                      target="_blank"
+                      className="text-primary hover:underline"
+                    >
+                      Patient Agreement
+                    </a>
+                    .
+                  </p>
+                  <p className="text-base">
+                    If you have more questions and want to discuss, please send
+                    a message below and we will contact you.
+                  </p>
+                  <p className="text-base">
+                    Dr. Rife & Dr. Kohl look forward to caring for you and your
+                    family!
+                  </p>
+                </div>
               </div>
             </div>
           </motion.div>
         </div>
       </section>
 
-      {/* Registration Forms Section */}
+      {/* Information Request Form Section */}
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            {/* Registration Form */}
+          <div className="max-w-2xl mx-auto">
             <motion.div
               {...fadeInDelay(0.1)}
               className="bg-white rounded-lg shadow-lg p-8"
             >
-              <h3 className="text-2xl font-bold text-center mb-6 uppercase">
-                Registration Form
-              </h3>
-              <form className="space-y-4">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div>
-                    <input
-                      type="text"
-                      name="name"
-                      placeholder="Enter your name"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
-                    />
-                  </div>
-                  <div>
-                    <input
-                      type="email"
-                      name="email"
-                      placeholder="Enter your email"
-                      required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
-                    />
-                  </div>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div>
-                    <input
-                      type="number"
-                      name="kids"
-                      placeholder="Number of Kids"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
-                    />
-                  </div>
-                  <div>
-                    <input
-                      type="tel"
-                      name="phone"
-                      placeholder="Enter your phone number"
-                      required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <button
-                    type="submit"
-                    className="w-full px-6 py-3 bg-primary text-white rounded-md font-medium hover:bg-primary/90 transition-colors"
-                  >
-                    Submit
-                  </button>
-                </div>
-              </form>
-            </motion.div>
-
-            {/* More Information Form */}
-            <motion.div
-              {...fadeInDelay(0.2)}
-              className="bg-white rounded-lg shadow-lg p-8"
-            >
-              <h3 className="text-2xl font-bold text-center mb-6">
-                For more information
+              <h3 className="text-2xl font-bold mb-6 border-b border-gray-200 pb-2">
+                Request Information
               </h3>
               <form
                 action="https://formspree.io/f/xbjvepzy"
                 method="post"
-                className="space-y-4"
+                className="space-y-6"
               >
                 <div>
+                  <label
+                    htmlFor="info-name"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    Name
+                  </label>
                   <input
                     type="text"
+                    id="info-name"
                     name="Name"
                     placeholder="Name"
                     className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
                   />
                 </div>
                 <div>
+                  <label
+                    htmlFor="info-phone"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    Phone
+                  </label>
                   <input
                     type="tel"
+                    id="info-phone"
                     name="Phone"
                     placeholder="Phone"
                     required
@@ -215,8 +179,15 @@ export const RegisterPage = () => {
                   />
                 </div>
                 <div>
+                  <label
+                    htmlFor="info-children"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    How Many Children
+                  </label>
                   <input
                     type="number"
+                    id="info-children"
                     name="How-Many-Children"
                     placeholder="How Many Children"
                     required
@@ -224,8 +195,15 @@ export const RegisterPage = () => {
                   />
                 </div>
                 <div>
+                  <label
+                    htmlFor="info-hear"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    How did you hear about us?
+                  </label>
                   <input
                     type="text"
+                    id="info-hear"
                     name="Hear-About"
                     placeholder="How did you hear about us?"
                     required
@@ -233,8 +211,15 @@ export const RegisterPage = () => {
                   />
                 </div>
                 <div>
+                  <label
+                    htmlFor="info-email"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    Email
+                  </label>
                   <input
                     type="email"
+                    id="info-email"
                     name="Email"
                     placeholder="Email"
                     required
@@ -258,8 +243,8 @@ export const RegisterPage = () => {
       {/* Contact Section */}
       <section id="contact" className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="h-96 md:h-auto rounded-lg overflow-hidden">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div className="h-96 lg:h-auto rounded-lg overflow-hidden shadow-lg">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.0668511323897!2d-95.62726!3d30.0891116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86473a7f2d0e5555%3A0x5c2b8b95a5c86285!2s455%20School%20St%20%2330%2C%20Tomball%2C%20TX%2077375!5e0!3m2!1sen!2sus!4v1709911234567!5m2!1sen!2sus"
                 width="100%"
@@ -272,17 +257,24 @@ export const RegisterPage = () => {
             </div>
 
             <div>
-              <h3 className="text-3xl font-bold mb-6 text-center md:text-left">
+              <h3 className="text-2xl font-bold mb-6 border-b border-gray-200 pb-2">
                 Contact
               </h3>
               <form
                 action="https://formspree.io/f/mgejbpnv"
                 method="post"
-                className="space-y-4"
+                className="space-y-6"
               >
                 <div>
+                  <label
+                    htmlFor="contact-name"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    Name
+                  </label>
                   <input
                     type="text"
+                    id="contact-name"
                     name="Name-4"
                     placeholder="Name"
                     required
@@ -290,8 +282,15 @@ export const RegisterPage = () => {
                   />
                 </div>
                 <div>
+                  <label
+                    htmlFor="contact-phone"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    Phone Number
+                  </label>
                   <input
                     type="tel"
+                    id="contact-phone"
                     name="Phone"
                     placeholder="Phone Number"
                     required
@@ -299,8 +298,15 @@ export const RegisterPage = () => {
                   />
                 </div>
                 <div>
+                  <label
+                    htmlFor="contact-email"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    Email
+                  </label>
                   <input
                     type="email"
+                    id="contact-email"
                     name="Email-2"
                     placeholder="Email"
                     required
@@ -308,7 +314,14 @@ export const RegisterPage = () => {
                   />
                 </div>
                 <div>
+                  <label
+                    htmlFor="contact-message"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    Message
+                  </label>
                   <textarea
+                    id="contact-message"
                     name="Message-2"
                     placeholder="Enter your message"
                     required
@@ -317,7 +330,14 @@ export const RegisterPage = () => {
                   ></textarea>
                 </div>
                 <div>
+                  <label
+                    htmlFor="contact-location"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    Location
+                  </label>
                   <select
+                    id="contact-location"
                     name="Location"
                     className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
                   >
@@ -340,7 +360,8 @@ export const RegisterPage = () => {
               </form>
 
               <div className="mt-8">
-                <ul className="space-y-3">
+                <h4 className="text-lg font-medium mb-4">Our Locations</h4>
+                <ul className="space-y-4">
                   <li>
                     <a
                       href="https://goo.gl/maps/96fFuZ8iTrivpPhJ7"

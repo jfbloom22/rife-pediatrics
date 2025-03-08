@@ -44,9 +44,9 @@ export const OurTeamPage = () => {
           <h3 className="text-3xl font-bold text-center mb-12">
             Choose Your Doc
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Dr. Bethany Rife */}
-            <div className="bg-gray-50 p-6 rounded-lg shadow-md">
+            <div className="bg-gray-50 p-6 rounded-lg shadow-md text-left">
               <h4 className="text-xl font-bold mb-4">Dr. Bethany Rife</h4>
               <ul className="list-disc pl-5 space-y-2">
                 <li>
@@ -63,7 +63,7 @@ export const OurTeamPage = () => {
             </div>
 
             {/* Dr. Daniel Kohl */}
-            <div className="bg-gray-50 p-6 rounded-lg shadow-md">
+            <div className="bg-gray-50 p-6 rounded-lg shadow-md text-left">
               <h4 className="text-xl font-bold mb-4">Dr. Daniel Kohl</h4>
               <ul className="list-disc pl-5 space-y-2">
                 <li>
@@ -86,7 +86,7 @@ export const OurTeamPage = () => {
             </div>
 
             {/* Nicole Hoff, PA */}
-            <div className="bg-gray-50 p-6 rounded-lg shadow-md">
+            <div className="bg-gray-50 p-6 rounded-lg shadow-md text-left">
               <h4 className="text-xl font-bold mb-4">Nicole Hoff, PA</h4>
               <ul className="list-disc pl-5 space-y-2">
                 <li>Primary care for adults and children of all ages</li>
@@ -103,7 +103,7 @@ export const OurTeamPage = () => {
             </div>
 
             {/* Dr. Avani Gupta */}
-            <div className="bg-gray-50 p-6 rounded-lg shadow-md">
+            <div className="bg-gray-50 p-6 rounded-lg shadow-md text-left">
               <h4 className="text-xl font-bold mb-4">Dr. Avani Gupta</h4>
               <ul className="list-disc pl-5 space-y-2">
                 <li>
