@@ -4,10 +4,10 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Link } from "react-router-dom";
 
-// Import images
-import logoImage from "@/assets/images/rifelogov2.png";
-import babyImage from "@/assets/images/_DSC6072.webp";
-import rifeChildrenImage from "@/assets/images/Rife4519.jpg";
+// Import images - use relative paths instead of alias paths
+import logoImage from "../assets/images/rifelogov2.png";
+import babyImage from "../assets/images/_DSC6072.webp";
+import rifeChildrenImage from "../assets/images/Rife4519.jpg";
 
 // Animation variants
 const fadeIn = {
@@ -38,11 +38,11 @@ export const HomePage = () => {
             transition={{ duration: 0.6 }}
             className="flex flex-col items-center"
           >
-            <div className="mb-8 max-w-md">
+            <div className="mb-8 max-w-xs">
               <img
                 src={logoImage}
                 alt="Rife Pediatrics"
-                className="w-full h-auto max-h-60"
+                className="w-full h-auto max-h-40"
               />
             </div>
             <div className="flex flex-col md:flex-row gap-4 mt-6">
@@ -74,20 +74,22 @@ export const HomePage = () => {
               </p>
             </motion.div>
             <div className="hidden md:block relative">
-              <motion.img
-                {...fadeIn}
-                src={babyImage}
-                alt="Baby with stethoscope"
-                className="rounded-lg shadow-lg w-full max-w-md mx-auto h-auto object-cover"
-              />
-              <motion.div
-                {...fadeInDelay(0.3)}
-                className="absolute top-0 right-0 w-16 h-16 border-t-4 border-r-4 border-primary"
-              ></motion.div>
-              <motion.div
-                {...fadeInDelay(0.4)}
-                className="absolute bottom-0 left-0 w-16 h-16 border-b-4 border-l-4 border-primary"
-              ></motion.div>
+              <div className="max-w-sm mx-auto">
+                <motion.img
+                  {...fadeIn}
+                  src={babyImage}
+                  alt="Baby with stethoscope"
+                  className="rounded-lg shadow-lg w-full h-auto object-cover"
+                />
+                <motion.div
+                  {...fadeInDelay(0.3)}
+                  className="absolute top-0 right-0 w-16 h-16 border-t-4 border-r-4 border-primary"
+                ></motion.div>
+                <motion.div
+                  {...fadeInDelay(0.4)}
+                  className="absolute bottom-0 left-0 w-16 h-16 border-b-4 border-l-4 border-primary"
+                ></motion.div>
+              </div>
             </div>
           </div>
         </div>
@@ -154,20 +156,22 @@ export const HomePage = () => {
             </div>
 
             <div className="hidden md:block md:col-span-1 relative">
-              <motion.img
-                {...fadeIn}
-                src={rifeChildrenImage}
-                alt="Rife Children"
-                className="rounded-lg shadow-lg w-full max-w-md mx-auto h-auto object-cover"
-              />
-              <motion.div
-                {...fadeInDelay(0.3)}
-                className="absolute top-0 right-0 w-16 h-16 border-t-4 border-r-4 border-primary"
-              ></motion.div>
-              <motion.div
-                {...fadeInDelay(0.4)}
-                className="absolute bottom-0 left-0 w-16 h-16 border-b-4 border-l-4 border-primary"
-              ></motion.div>
+              <div className="max-w-sm mx-auto h-full flex items-center">
+                <motion.img
+                  {...fadeIn}
+                  src={rifeChildrenImage}
+                  alt="Rife Children"
+                  className="rounded-lg shadow-lg w-full h-auto object-cover max-h-96"
+                />
+                <motion.div
+                  {...fadeInDelay(0.3)}
+                  className="absolute top-0 right-0 w-16 h-16 border-t-4 border-r-4 border-primary"
+                ></motion.div>
+                <motion.div
+                  {...fadeInDelay(0.4)}
+                  className="absolute bottom-0 left-0 w-16 h-16 border-b-4 border-l-4 border-primary"
+                ></motion.div>
+              </div>
             </div>
 
             <div className="md:col-span-1">
