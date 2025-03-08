@@ -4,6 +4,26 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Link } from "react-router-dom";
 
+// Import images
+import logoImage from "@/assets/images/rifelogov2.png";
+import babyImage from "@/assets/images/_DSC6072.webp";
+import rifeChildrenImage from "@/assets/images/Rife4519.jpg";
+
+// Animation variants
+const fadeIn = {
+  initial: { opacity: 0 },
+  whileInView: { opacity: 1 },
+  viewport: { once: true },
+  transition: { duration: 0.6 },
+};
+
+const fadeInDelay = (delay: number) => ({
+  initial: { opacity: 0 },
+  whileInView: { opacity: 1 },
+  viewport: { once: true },
+  transition: { duration: 0.6, delay },
+});
+
 export const HomePage = () => {
   return (
     <div className="flex flex-col min-h-screen">
@@ -18,11 +38,11 @@ export const HomePage = () => {
             transition={{ duration: 0.6 }}
             className="flex flex-col items-center"
           >
-            <div className="mb-8">
+            <div className="mb-8 max-w-md">
               <img
-                src="/src/assets/images/rifelogov2.png"
+                src={logoImage}
                 alt="Rife Pediatrics"
-                className="max-w-full h-auto max-h-80"
+                className="w-full h-auto max-h-60"
               />
             </div>
             <div className="flex flex-col md:flex-row gap-4 mt-6">
@@ -41,13 +61,7 @@ export const HomePage = () => {
       <section id="about" className="py-16 md:py-24 bg-gray-50">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="text-left"
-            >
+            <motion.div {...fadeIn} className="text-left">
               <h5 className="text-2xl font-bold mb-4">
                 <span className="text-primary">Direct</span> Primary Care
               </h5>
@@ -61,26 +75,17 @@ export const HomePage = () => {
             </motion.div>
             <div className="hidden md:block relative">
               <motion.img
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                src="/src/assets/images/_DSC6072.webp"
+                {...fadeIn}
+                src={babyImage}
                 alt="Baby with stethoscope"
-                className="rounded-lg shadow-lg max-w-full h-auto"
+                className="rounded-lg shadow-lg w-full max-w-md mx-auto h-auto object-cover"
               />
               <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.3 }}
+                {...fadeInDelay(0.3)}
                 className="absolute top-0 right-0 w-16 h-16 border-t-4 border-r-4 border-primary"
               ></motion.div>
               <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.4 }}
+                {...fadeInDelay(0.4)}
                 className="absolute bottom-0 left-0 w-16 h-16 border-b-4 border-l-4 border-primary"
               ></motion.div>
             </div>
@@ -91,13 +96,7 @@ export const HomePage = () => {
       {/* Why Choose Us Section */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-6">
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center max-w-3xl mx-auto"
-          >
+          <motion.div {...fadeIn} className="text-center max-w-3xl mx-auto">
             <h5 className="text-2xl font-bold mb-4">
               why <span className="text-primary">choose</span> us
             </h5>
@@ -156,26 +155,17 @@ export const HomePage = () => {
 
             <div className="hidden md:block md:col-span-1 relative">
               <motion.img
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-                src="/src/assets/images/Rife4519.jpg"
+                {...fadeIn}
+                src={rifeChildrenImage}
                 alt="Rife Children"
-                className="rounded-lg shadow-lg h-full object-cover"
+                className="rounded-lg shadow-lg w-full max-w-md mx-auto h-auto object-cover"
               />
               <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.3 }}
+                {...fadeInDelay(0.3)}
                 className="absolute top-0 right-0 w-16 h-16 border-t-4 border-r-4 border-primary"
               ></motion.div>
               <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.4 }}
+                {...fadeInDelay(0.4)}
                 className="absolute bottom-0 left-0 w-16 h-16 border-b-4 border-l-4 border-primary"
               ></motion.div>
             </div>
