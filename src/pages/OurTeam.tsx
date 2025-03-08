@@ -9,6 +9,21 @@ import danielImage from "@/assets/images/Daniel_012x.webp";
 import nicoleImage from "@/assets/images/nicole-hoff.webp";
 import guptaImage from "@/assets/images/dr-gupta.webp";
 
+// Animation variants for consistent animations
+const fadeIn = {
+  initial: { opacity: 0 },
+  whileInView: { opacity: 1 },
+  viewport: { once: true },
+  transition: { duration: 0.6 },
+};
+
+const fadeInDelay = (delay: number) => ({
+  initial: { opacity: 0 },
+  whileInView: { opacity: 1 },
+  viewport: { once: true },
+  transition: { duration: 0.6, delay },
+});
+
 export const OurTeamPage = () => {
   return (
     <div className="flex flex-col min-h-screen">
@@ -120,36 +135,21 @@ export const OurTeamPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="hidden md:block relative">
               <motion.img
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
+                {...fadeIn}
                 src={bethanyImage}
                 alt="Bethany Rife"
                 className="rounded-lg shadow-lg w-full max-w-md mx-auto h-auto object-cover"
               />
               <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.3 }}
+                {...fadeInDelay(0.3)}
                 className="absolute top-0 right-0 w-16 h-16 border-t-4 border-r-4 border-primary"
               ></motion.div>
               <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.4 }}
+                {...fadeInDelay(0.4)}
                 className="absolute bottom-0 left-0 w-16 h-16 border-b-4 border-l-4 border-primary"
               ></motion.div>
             </div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="text-left"
-            >
+            <motion.div {...fadeIn} className="text-left">
               <h5 className="text-2xl font-bold mb-4">Bio</h5>
               <p className="mb-4">
                 Dr. Rife grew up in Tomball, Texas and attended Rosehill
@@ -198,36 +198,21 @@ export const OurTeamPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="hidden md:block relative">
               <motion.img
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
+                {...fadeIn}
                 src={danielImage}
                 alt="Daniel Kohl"
                 className="rounded-lg shadow-lg w-full max-w-md mx-auto h-auto object-cover"
               />
               <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.3 }}
+                {...fadeInDelay(0.3)}
                 className="absolute top-0 right-0 w-16 h-16 border-t-4 border-r-4 border-primary"
               ></motion.div>
               <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.4 }}
+                {...fadeInDelay(0.4)}
                 className="absolute bottom-0 left-0 w-16 h-16 border-b-4 border-l-4 border-primary"
               ></motion.div>
             </div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="text-left md:order-first"
-            >
+            <motion.div {...fadeIn} className="text-left md:order-first">
               <h5 className="text-2xl font-bold mb-4">Bio</h5>
               <p className="mb-4">
                 Dr. Daniel Kohl was born and raised in Cedarville, a small
@@ -295,36 +280,21 @@ export const OurTeamPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="hidden md:block relative">
               <motion.img
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
+                {...fadeIn}
                 src={nicoleImage}
                 alt="Nicole Hoff"
                 className="rounded-lg shadow-lg w-full max-w-md mx-auto h-auto object-cover"
               />
               <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.3 }}
+                {...fadeInDelay(0.3)}
                 className="absolute top-0 right-0 w-16 h-16 border-t-4 border-r-4 border-primary"
               ></motion.div>
               <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.4 }}
+                {...fadeInDelay(0.4)}
                 className="absolute bottom-0 left-0 w-16 h-16 border-b-4 border-l-4 border-primary"
               ></motion.div>
             </div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="text-left"
-            >
+            <motion.div {...fadeIn} className="text-left">
               <h5 className="text-2xl font-bold mb-4">Bio</h5>
               <p className="mb-4">
                 Nicole Hoff is a Board-Certified Physician Assistant (PA) and a
@@ -389,13 +359,7 @@ export const OurTeamPage = () => {
             Dr. Avani Gupta
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="text-left md:order-first"
-            >
+            <motion.div {...fadeIn} className="text-left md:order-first">
               <h5 className="text-2xl font-bold mb-4">Bio</h5>
               <p className="mb-4">
                 Dr. Gupta is a Board Certified Family Physician who values the
@@ -436,26 +400,17 @@ export const OurTeamPage = () => {
             </motion.div>
             <div className="hidden md:block relative">
               <motion.img
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
+                {...fadeIn}
                 src={guptaImage}
                 alt="Dr. Avani Gupta"
                 className="rounded-lg shadow-lg w-full max-w-md mx-auto h-auto object-cover"
               />
               <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.3 }}
+                {...fadeInDelay(0.3)}
                 className="absolute top-0 right-0 w-16 h-16 border-t-4 border-r-4 border-primary"
               ></motion.div>
               <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.4 }}
+                {...fadeInDelay(0.4)}
                 className="absolute bottom-0 left-0 w-16 h-16 border-b-4 border-l-4 border-primary"
               ></motion.div>
             </div>
